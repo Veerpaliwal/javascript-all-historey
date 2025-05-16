@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="abc"></h1>
+    <h1 id="xyz"></h1>
+    <h1 id="wxy"></h1>
+
+    <script>
+        // JS Object Member -> 1. Property:Value 2. Methods
+         
+        var myCar = {
+            //1. property:value p:v
+            name:"tata",
+            color:'white',
+            'year':2015,
+        }
+
+        console.log(myCar);
+        // js object.
+        // . what member selicton opertor
+        console.log(myCar.name);
+        //2. object.method
+
+        //1. object.property
+        //2. object["property"]
+        //3. object[expression]
+        document.getElementById('abc').innerHTML = myCar.name // object.property
+        document.getElementById('xyz').innerHTML = myCar["color"] // object["property"]
+        let x = 'year';
+        document.getElementById('wxy').innerHTML = myCar[x]; // object[expression]
+        
+
+       
+    </script> 
+</body>
+</html>
