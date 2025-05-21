@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Class Internal Object = this
+        // how many properts in class
+        // PascaleCase
+        class MyClass{
+            //1. property = variable
+            name="veer";
+            surname='paliwal';
+            age=19;
+
+            //2. constructor = Esp. function and variable
+
+            //3. method = function
+
+            //1. function define
+             addMyName(){
+                  console.log("hello "+this.name);
+                  console.log("hello "+this.surname);
+                  console.log("hello "+this.age);
+            }
+        }
+        // class Instantiation
+        // let object = new MyClass();
+           let object = new MyClass();
+        
+           object.addMyName();
+           
+        
+
+    </script>
+</body>
+</html>
