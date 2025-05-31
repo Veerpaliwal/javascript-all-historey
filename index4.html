@@ -56,24 +56,28 @@
            // Callback Function
            
            // function calling are one time process
-           function showresult(result){
-            console.log(result);
+           function add(x,y,subtract){ // x,y are formal argument
+            // every function may return something
+              subtract(x+y,10);
+           // return x,y;
 
+           }
+           // new style fat arrow function 2015 ES6
+           let sub = (xx,yy)=>{
+               console.log(xx-yy);
            }
 
 
-           function addMyNumber(x,y,mycallbackfunction){ // //formal argument name can be anything started with alphabet
-            // use to local variable
-                    let result = x+y;
-            // function calling/invoking
-            mycallbackfunction(result);
-           }
-           // function caling are many time process 
-           addMyNumber(10,90,showresult); // dono function ki calling ek sath kr de hai
+           // function calling/invoking
+          // function caling are many time process 
+           add(10,90,sub); 
 
 
 
 
+
+    </script>
+    <script>
 
     </script>
     
