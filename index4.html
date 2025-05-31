@@ -63,6 +63,7 @@
 
            }
            // new style fat arrow function 2015 ES6
+           // when function body can be stored in variable
            let sub = (xx,yy)=>{
                console.log(xx-yy);
            }
@@ -77,7 +78,50 @@
 
 
     </script>
+
     <script>
+       // Higher Order Function
+       // camalCase define
+             function sayHello() {
+            console.log("Hello from callback!");
+            }
+
+            function highOrderFunction(callback) {
+            console.log("Inside high-order function");
+            callback();  
+            }
+
+            highOrderFunction(sayHello); 
+
+    </script>
+
+
+
+    <script>
+        //  First Class Function
+        // function define
+        let function1 = (x,y)=>{ // this is formal argumenet
+            return x+y;
+        }
+        // function calling / invoking
+        var result1 = (50+50); // this is actual argument
+            console.log(result1);
+
+    </script>
+    <script>
+        // Function Currying
+        // function define
+        function add(a){
+        return function(b){
+            return function (c){
+                return function (d){
+                 console.log(a+b+c+d);
+                }   
+            }
+           }
+        }
+        // function calling / invoking
+        add(20)(20)(20)(20);
 
     </script>
     

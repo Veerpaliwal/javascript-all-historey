@@ -7,7 +7,71 @@
 </head>
 <body>
     <script>
-        
+        // Types of Loops in JS
+
+        // this is for loops
+        // for - loops through a block of code a number of times
+
+        /*for (initialization;condition;inc/decr){
+        code block to be executed
+        } */
+
+        for (var i=0 ; i<10 ;i++){
+        console.log("hello veer")
+        }
+
+    
+    </script>
+
+    <script>
+        // this is for in loops
+        // for/in - loops through the properties of an object
+        let student = {
+            //1. p:"v"
+            // "p":v
+            //  p:v
+            fname:"veer",
+            lname:'paliwal',
+            a:"chirag",
+            b:'sharma',
+            c:"hardik",
+            d:'pandeya'
+
+            //2. method()
+
+        }
+        /*   for (key in object) {
+             // code block to be executed
+        } 
+        */
+         for (key in student ){
+            console.log(key);
+            //objectName["property"] agar property kah sath value bhi lana hai toh object propert kah use hota hai
+            console.log(student[key]);
+         }
+
+
+    </script>
+    <script>
+      // js For Of Loops statement of array
+            let crickters = ['hardik',"rishabh",`rohit`,'rinku'];
+    // agar check kr na hai kah array ktne hai toh ek formula hai 
+     // array.lenght
+            console.log(crickters.length);
+     // this is syntex for of loops
+    /* for (variable of iterable) {
+     // code block to be executed
+      }
+      */
+      /* for (singular of plural) {
+      // code block to be executed
+     }
+     */
+            for (crickter of crickters){
+    // use for string interpoluction in console.log ya hamasha `backtick`sa use hota hai
+            console.log(`hello ${crickter},hello brothers`);
+            }
+
     </script>
 </body>
 </html>
